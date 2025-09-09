@@ -1,0 +1,253 @@
+{
+  "title": "Daily Playbook",
+  "as_of": "2025-09-08",
+  "macro": {
+    "VIX": 15.109999656677246,
+    "UST10Y": 0.040460000038146975
+  },
+  "prices": {
+    "SPY": {
+      "close": 648.8300170898438,
+      "sma20": 643.5699951171875,
+      "sma50": 633.8815979003906,
+      "atr14": 5.622144426618304,
+      "ret_1d": 0.002456626412859597
+    },
+    "QQQ": {
+      "close": 578.8699951171875,
+      "sma20": 573.3880035400391,
+      "sma50": 565.2690026855469,
+      "atr14": 7.127140590122768,
+      "ret_1d": 0.004877959883524019
+    },
+    "IWM": {
+      "close": 238.25,
+      "sma20": 231.410001373291,
+      "sma50": 225.30580017089844,
+      "atr14": 3.304998125348772,
+      "ret_1d": 0.002018739617756893
+    },
+    "DIA": {
+      "close": 456.20001220703125,
+      "sma20": 451.7806930541992,
+      "sma50": 446.72035034179686,
+      "atr14": 3.9714268275669644,
+      "ret_1d": 0.0026594474573669036
+    },
+    "AAPL": {
+      "close": 237.8800048828125,
+      "sma20": 231.59249877929688,
+      "sma50": 219.00778076171875,
+      "atr14": 3.995000566755022,
+      "ret_1d": -0.007551410322323426
+    },
+    "MSFT": {
+      "close": 498.20001220703125,
+      "sma20": 509.6252105712891,
+      "sma50": 509.0904986572266,
+      "atr14": 7.366802980169593,
+      "ret_1d": 0.006464671125315569
+    },
+    "NVDA": {
+      "close": 168.30999755859375,
+      "sma20": 177.0609992980957,
+      "sma50": 172.5848001098633,
+      "atr14": 5.467855181012835,
+      "ret_1d": 0.007723585517507514
+    },
+    "AMZN": {
+      "close": 235.83999633789062,
+      "sma20": 228.24949951171874,
+      "sma50": 225.88940002441407,
+      "atr14": 4.847142900739398,
+      "ret_1d": 0.015107797009308976
+    },
+    "META": {
+      "close": 752.2999877929688,
+      "sma20": 756.6959930419922,
+      "sma50": 739.0395971679687,
+      "atr14": 14.668570382254464,
+      "ret_1d": -0.0001993812367979686
+    },
+    "TSLA": {
+      "close": 346.3999938964844,
+      "sma20": 338.040998840332,
+      "sma50": 324.48599914550783,
+      "atr14": 12.638565063476562,
+      "ret_1d": -0.01265534855703887
+    },
+    "GOOGL": {
+      "close": 234.0399932861328,
+      "sma20": 210.71900100708007,
+      "sma50": 196.2109994506836,
+      "atr14": 5.912143162318638,
+      "ret_1d": -0.0040851349526263014
+    },
+    "JPM": {
+      "close": 292.9100036621094,
+      "sma20": 295.264501953125,
+      "sma50": 292.75862182617186,
+      "atr14": 5.049996512276786,
+      "ret_1d": -0.004993549821049492
+    },
+    "XOM": {
+      "close": 109.8499984741211,
+      "sma20": 109.71868934631348,
+      "sma50": 109.6099040222168,
+      "atr14": 1.8850010463169642,
+      "ret_1d": 0.005676051433977536
+    }
+  },
+  "watchlist": [
+    "TSLA",
+    "NVDA",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "JPM",
+    "XOM",
+    "AAPL",
+    "MSFT"
+  ],
+  "trade_ideas": [
+    {
+      "ticker": "MSFT",
+      "strategy": "LongPut",
+      "direction": "bearish",
+      "rationale": [],
+      "entry": {
+        "type": "limit",
+        "level": null,
+        "validity": "today"
+      },
+      "invalidation": {
+        "price": null,
+        "rule": null
+      },
+      "time_frame_days": 30,
+      "risk_notes": [],
+      "sizing_hint": "Risk ~0.5R per ticket given single-name and theta risks.",
+      "citations": [],
+      "confidence": 0.55,
+      "legs": [
+        {
+          "side": "BUY",
+          "type": "PUT",
+          "expiry": "2025-10-10",
+          "strike": 500.0,
+          "qty": 1,
+          "bid": 10.9,
+          "ask": 12.4,
+          "mid": 11.65
+        }
+      ],
+      "pnl": {
+        "net_debit_credit": -11.65,
+        "max_profit": null,
+        "max_loss": 11.65,
+        "breakevens": [
+          488.35
+        ]
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "strategy": "BearPutSpread",
+      "direction": "bearish",
+      "rationale": [],
+      "entry": {
+        "type": "limit",
+        "level": null,
+        "validity": "today"
+      },
+      "invalidation": {
+        "price": null,
+        "rule": null
+      },
+      "time_frame_days": 30,
+      "risk_notes": [],
+      "sizing_hint": "Risk 0.5R per ticket; consider staggering entries given recent uptick.",
+      "citations": [],
+      "confidence": 0.62,
+      "legs": [
+        {
+          "side": "BUY",
+          "type": "PUT",
+          "expiry": "2025-10-10",
+          "strike": 170.0,
+          "qty": 1,
+          "bid": 7.1,
+          "ask": 7.3,
+          "mid": 7.199999999999999
+        },
+        {
+          "side": "SELL",
+          "type": "PUT",
+          "expiry": "2025-10-10",
+          "strike": 165.0,
+          "qty": 1,
+          "bid": 4.95,
+          "ask": 5.05,
+          "mid": 5.0
+        }
+      ],
+      "pnl": {
+        "net_debit_credit": -2.1999999999999993,
+        "max_profit": 2.8000000000000007,
+        "max_loss": 2.1999999999999993,
+        "breakevens": [
+          167.8
+        ]
+      }
+    },
+    {
+      "ticker": "AAPL",
+      "strategy": "LongCall",
+      "direction": "bullish",
+      "rationale": [],
+      "entry": {
+        "type": "limit",
+        "level": null,
+        "validity": "today"
+      },
+      "invalidation": {
+        "price": null,
+        "rule": null
+      },
+      "time_frame_days": 30,
+      "risk_notes": [],
+      "sizing_hint": "Risk ~0.5R per ticket; consider adding only on dips toward the 20-day.",
+      "citations": [],
+      "confidence": 0.55,
+      "legs": [
+        {
+          "side": "BUY",
+          "type": "CALL",
+          "expiry": "2025-10-10",
+          "strike": 240.0,
+          "qty": 1,
+          "bid": 5.45,
+          "ask": 5.55,
+          "mid": 5.5
+        }
+      ],
+      "pnl": {
+        "net_debit_credit": -5.5,
+        "max_profit": null,
+        "max_loss": 5.5,
+        "breakevens": [
+          245.5
+        ]
+      }
+    }
+  ],
+  "position_notes": [],
+  "red_flags": [
+    "VIX at ~15 is low; any shock could prompt abrupt vol re-pricing against short-vol or late option entries.",
+    "Dispersion: MSFT and NVDA remain below their 20/50-day SMAs while QQQ outperforms, raising squeeze/rotation risk.",
+    "TSLA\u2019s -1.27% decline contrasts with index gains; single-name volatility risk persists.",
+    "Macro calendar not provided; potential data/event risk not captured.",
+    "UST 10Y level provided without directional context; rate-sensitivity and trend unknown from current data alone.",
+    "No earnings in next 7 days for these names; catalyst vacuum can increase drift/theta risk."
+  ]
+}
