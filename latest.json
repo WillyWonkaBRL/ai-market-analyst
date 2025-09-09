@@ -109,9 +109,103 @@
     "AAPL",
     "MSFT"
   ],
-  "trade_ideas": [],
+  "trade_ideas": [
+    {
+      "ticker": "MSFT",
+      "strategy": "LongPut",
+      "direction": "bearish",
+      "rationale": [
+        "Below 20/50-DMA; relative weakness versus QQQ.",
+        "Bounce into 500\u2013510 supply offers defined-risk entry.",
+        "Low VIX keeps put pricing reasonable."
+      ],
+      "entry": {
+        "type": "limit",
+        "level": null,
+        "validity": "today"
+      },
+      "invalidation": {
+        "price": 505,
+        "rule": null
+      },
+      "time_frame_days": 32,
+      "risk_notes": [
+        "Broad tape bullish; squeeze risk above 505/510.",
+        "Assumes IV near 30-day median; verify before entry.",
+        "Mind spreads into fast moves; use limits."
+      ],
+      "sizing_hint": "Risk ~0.5R; single-ticket acceptable; consider time stop at 10 trading days.",
+      "citations": [],
+      "confidence": 0.53,
+      "legs": [],
+      "pnl": null
+    },
+    {
+      "ticker": "NVDA",
+      "strategy": "BearPutSpread",
+      "direction": "bearish",
+      "rationale": [
+        "Price below 20/50-DMA; lower highs persist.",
+        "170\u2013172 acts as nearby supply.",
+        "Vertical spread defines risk and reduces decay.",
+        "No earnings in cycle lowers gap risk."
+      ],
+      "entry": {
+        "type": "limit",
+        "level": null,
+        "validity": "today"
+      },
+      "invalidation": {
+        "price": 173,
+        "rule": null
+      },
+      "time_frame_days": 32,
+      "risk_notes": [
+        "AI headline squeezes can be violent.",
+        "Assumes IV near 30-day median; verify.",
+        "Support near 165 may trigger sharp bounces."
+      ],
+      "sizing_hint": "Risk ~0.5R; spread caps theta and slippage; scale out near 166\u2013165.",
+      "citations": [],
+      "confidence": 0.54,
+      "legs": [],
+      "pnl": null
+    },
+    {
+      "ticker": "AAPL",
+      "strategy": "LongCall",
+      "direction": "bullish",
+      "rationale": [
+        "Above 20/50-DMA; uptrend intact.",
+        "Brief pullback improves risk/reward to 240 strike.",
+        "VIX ~15 keeps call premiums reasonable.",
+        "Earnings after expiry; cleaner catalyst path."
+      ],
+      "entry": {
+        "type": "limit",
+        "level": null,
+        "validity": "today"
+      },
+      "invalidation": {
+        "price": 231,
+        "rule": null
+      },
+      "time_frame_days": 32,
+      "risk_notes": [
+        "Close below 231\u2013232 invalidates momentum thesis.",
+        "Theta hurts if price chops under 240.",
+        "Assumes IV near 30-day median; verify."
+      ],
+      "sizing_hint": "Risk ~0.5R; consider partials near 245\u2013246; time stop if stagnating.",
+      "citations": [],
+      "confidence": 0.56,
+      "legs": [],
+      "pnl": null
+    }
+  ],
   "position_notes": [],
   "red_flags": [
-    "LLM schema validation failure"
+    "Implied volatility data not provided; confirm IV versus 30-day median pre-trade.",
+    "Bearish setups run against broadly bullish index trend."
   ]
 }
