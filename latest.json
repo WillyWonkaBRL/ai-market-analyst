@@ -31,7 +31,7 @@
       "close": 456.20001220703125,
       "sma20": 451.7806930541992,
       "sma50": 446.72035034179686,
-      "atr14": 3.9703543526785716,
+      "atr14": 3.9714268275669644,
       "ret_1d": 0.0026594474573669036
     },
     "AAPL": {
@@ -45,7 +45,7 @@
       "close": 498.20001220703125,
       "sma20": 509.6252105712891,
       "sma50": 509.0904986572266,
-      "atr14": 7.366445488540129,
+      "atr14": 7.366802980169593,
       "ret_1d": 0.006464671125315569
     },
     "NVDA": {
@@ -66,7 +66,7 @@
       "close": 752.2999877929688,
       "sma20": 756.6959930419922,
       "sma50": 739.0395971679687,
-      "atr14": 14.667855398995536,
+      "atr14": 14.668570382254464,
       "ret_1d": -0.0001993812367979686
     },
     "TSLA": {
@@ -80,21 +80,21 @@
       "close": 234.0399932861328,
       "sma20": 210.71900100708007,
       "sma50": 196.2109994506836,
-      "atr14": 5.911070687430246,
+      "atr14": 5.912143162318638,
       "ret_1d": -0.0040851349526263014
     },
     "JPM": {
       "close": 292.9100036621094,
       "sma20": 295.264501953125,
       "sma50": 292.75862182617186,
-      "atr14": 5.044283185686384,
+      "atr14": 5.049996512276786,
       "ret_1d": -0.004993549821049492
     },
     "XOM": {
       "close": 109.8499984741211,
       "sma20": 109.71868934631348,
       "sma50": 109.6099040222168,
-      "atr14": 1.8846435546875,
+      "atr14": 1.8850010463169642,
       "ret_1d": 0.005676051433977536
     }
   },
@@ -125,12 +125,8 @@
         "rule": null
       },
       "time_frame_days": 30,
-      "risk_notes": [
-        "A sustained rebound that reclaims the 20- and 50-day SMAs would weaken the bearish thesis.",
-        "Time decay and vol compression can erode premium absent directional follow-through.",
-        "Quiet catalyst window increases the risk of a slow drift that fails to reach breakeven."
-      ],
-      "sizing_hint": "risk 0.5R per ticket",
+      "risk_notes": [],
+      "sizing_hint": "Risk ~0.5R per ticket given single-name and theta risks.",
       "citations": [],
       "confidence": 0.55,
       "legs": [
@@ -169,14 +165,10 @@
         "rule": null
       },
       "time_frame_days": 30,
-      "risk_notes": [
-        "A sharp AI-led rebound could quickly negate near-dated bearish structures.",
-        "Theta decay is non-trivial in a low-vol, catalyst-light tape.",
-        "Limited profit ceiling caps gains if a larger drawdown occurs."
-      ],
-      "sizing_hint": "risk 0.5R per ticket",
+      "risk_notes": [],
+      "sizing_hint": "Risk 0.5R per ticket; consider staggering entries given recent uptick.",
       "citations": [],
-      "confidence": 0.6,
+      "confidence": 0.62,
       "legs": [
         {
           "side": "BUY",
@@ -223,14 +215,10 @@
         "rule": null
       },
       "time_frame_days": 30,
-      "risk_notes": [
-        "No near-term catalyst before expiry increases reliance on broad market strength for follow-through.",
-        "A continued rotation away from selected mega-caps could pressure AAPL despite its trend.",
-        "Time decay can overwhelm modest gains if the advance is slow."
-      ],
-      "sizing_hint": "risk 0.3R per ticket",
+      "risk_notes": [],
+      "sizing_hint": "Risk ~0.5R per ticket; consider adding only on dips toward the 20-day.",
       "citations": [],
-      "confidence": 0.45,
+      "confidence": 0.55,
       "legs": [
         {
           "side": "BUY",
@@ -255,10 +243,11 @@
   ],
   "position_notes": [],
   "red_flags": [
-    "VIX at 15.11 is low; vulnerability to a volatility expansion is elevated.",
-    "UST10Y in this dataset prints 0.04046; scale/interpretation is unclear for macro inference (data gap).",
-    "Several leaders sit below short-term trend markers (e.g., MSFT and NVDA below 20- and 50-day SMAs), creating divergence risk.",
-    "Earnings calendar is quiet over the next 7 days for this universe, reducing event-driven edge for near-dated options.",
-    "AAPL long call expires before earnings (2025-10-29), removing a potential catalyst from the trade\u2019s window."
+    "VIX at ~15 is low; any shock could prompt abrupt vol re-pricing against short-vol or late option entries.",
+    "Dispersion: MSFT and NVDA remain below their 20/50-day SMAs while QQQ outperforms, raising squeeze/rotation risk.",
+    "TSLA\u2019s -1.27% decline contrasts with index gains; single-name volatility risk persists.",
+    "Macro calendar not provided; potential data/event risk not captured.",
+    "UST 10Y level provided without directional context; rate-sensitivity and trend unknown from current data alone.",
+    "No earnings in next 7 days for these names; catalyst vacuum can increase drift/theta risk."
   ]
 }
