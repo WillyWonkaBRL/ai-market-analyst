@@ -1,6 +1,6 @@
 {
   "title": "Daily Playbook",
-  "as_of": "2025-09-08",
+  "as_of": "2025-09-09",
   "macro": {
     "VIX": 15.109999656677246,
     "UST10Y": 0.040460000038146975
@@ -115,9 +115,10 @@
       "strategy": "LongPut",
       "direction": "bearish",
       "rationale": [
-        "Below 20/50-DMA; relative weakness versus QQQ.",
-        "Bounce into 500\u2013510 supply offers defined-risk entry.",
-        "Low VIX keeps put pricing reasonable."
+        "Price below 20/50-day MAs; trend weak.",
+        "Rebounds stalling near MA cluster resistance.",
+        "VIX near 15; long premium comparatively cheap.",
+        "Earnings after expiry; cleaner technical trade."
       ],
       "entry": {
         "type": "limit",
@@ -125,30 +126,48 @@
         "validity": "today"
       },
       "invalidation": {
-        "price": 505,
+        "price": null,
         "rule": null
       },
-      "time_frame_days": 32,
+      "time_frame_days": 30,
       "risk_notes": [
-        "Broad tape bullish; squeeze risk above 505/510.",
-        "Assumes IV near 30-day median; verify before entry.",
-        "Mind spreads into fast moves; use limits."
+        "Strong market beta squeezes back above MAs.",
+        "Theta if price chops 495\u2013505.",
+        "Assumes IV near 30d median; verify pre-trade."
       ],
-      "sizing_hint": "Risk ~0.5R; single-ticket acceptable; consider time stop at 10 trading days.",
+      "sizing_hint": "Risk ~0.5R, single-ticket allowed.",
       "citations": [],
-      "confidence": 0.53,
-      "legs": [],
-      "pnl": null
+      "confidence": 0.52,
+      "legs": [
+        {
+          "side": "BUY",
+          "type": "PUT",
+          "expiry": "2025-10-10",
+          "strike": 500.0,
+          "qty": 1,
+          "bid": 10.9,
+          "ask": 12.4,
+          "mid": 11.65
+        }
+      ],
+      "pnl": {
+        "net_debit_credit": -11.65,
+        "max_profit": null,
+        "max_loss": 11.65,
+        "breakevens": [
+          488.35
+        ]
+      }
     },
     {
       "ticker": "NVDA",
       "strategy": "BearPutSpread",
       "direction": "bearish",
       "rationale": [
-        "Price below 20/50-DMA; lower highs persist.",
-        "170\u2013172 acts as nearby supply.",
-        "Vertical spread defines risk and reduces decay.",
-        "No earnings in cycle lowers gap risk."
+        "Price below 20/50-day MAs; momentum fading.",
+        "ATR elevated; test of 165\u2013168 support possible.",
+        "Debit spread limits theta and vega versus naked puts.",
+        "No earnings before expiry; technical setup."
       ],
       "entry": {
         "type": "limit",
@@ -156,30 +175,58 @@
         "validity": "today"
       },
       "invalidation": {
-        "price": 173,
+        "price": null,
         "rule": null
       },
-      "time_frame_days": 32,
+      "time_frame_days": 30,
       "risk_notes": [
-        "AI headline squeezes can be violent.",
-        "Assumes IV near 30-day median; verify.",
-        "Support near 165 may trigger sharp bounces."
+        "AI-led squeeze reclaiming MAs invalidates.",
+        "Pin risk near 165 short strike into expiry.",
+        "Assumes IV near 30d median; verify."
       ],
-      "sizing_hint": "Risk ~0.5R; spread caps theta and slippage; scale out near 166\u2013165.",
+      "sizing_hint": "Risk ~0.5R; defined-risk spread.",
       "citations": [],
-      "confidence": 0.54,
-      "legs": [],
-      "pnl": null
+      "confidence": 0.56,
+      "legs": [
+        {
+          "side": "BUY",
+          "type": "PUT",
+          "expiry": "2025-10-10",
+          "strike": 170.0,
+          "qty": 1,
+          "bid": 7.1,
+          "ask": 7.3,
+          "mid": 7.199999999999999
+        },
+        {
+          "side": "SELL",
+          "type": "PUT",
+          "expiry": "2025-10-10",
+          "strike": 165.0,
+          "qty": 1,
+          "bid": 4.95,
+          "ask": 5.05,
+          "mid": 5.0
+        }
+      ],
+      "pnl": {
+        "net_debit_credit": -2.1999999999999993,
+        "max_profit": 2.8000000000000007,
+        "max_loss": 2.1999999999999993,
+        "breakevens": [
+          167.8
+        ]
+      }
     },
     {
       "ticker": "AAPL",
       "strategy": "LongCall",
       "direction": "bullish",
       "rationale": [
-        "Above 20/50-DMA; uptrend intact.",
-        "Brief pullback improves risk/reward to 240 strike.",
-        "VIX ~15 keeps call premiums reasonable.",
-        "Earnings after expiry; cleaner catalyst path."
+        "Price above 20/50-day MAs; uptrend intact.",
+        "Pullback toward rising 20-day offers entry.",
+        "VIX ~15; call pricing relatively benign.",
+        "Seasonal September headlines possible; verify calendar."
       ],
       "entry": {
         "type": "limit",
@@ -187,25 +234,43 @@
         "validity": "today"
       },
       "invalidation": {
-        "price": 231,
+        "price": null,
         "rule": null
       },
-      "time_frame_days": 32,
+      "time_frame_days": 30,
       "risk_notes": [
-        "Close below 231\u2013232 invalidates momentum thesis.",
-        "Theta hurts if price chops under 240.",
-        "Assumes IV near 30-day median; verify."
+        "Two daily closes below 20-day invalidates.",
+        "Theta decay if price stalls under 240.",
+        "Assumes IV near 30d median; verify."
       ],
-      "sizing_hint": "Risk ~0.5R; consider partials near 245\u2013246; time stop if stagnating.",
+      "sizing_hint": "Risk ~0.5R, single-ticket allowed.",
       "citations": [],
-      "confidence": 0.56,
-      "legs": [],
-      "pnl": null
+      "confidence": 0.55,
+      "legs": [
+        {
+          "side": "BUY",
+          "type": "CALL",
+          "expiry": "2025-10-10",
+          "strike": 240.0,
+          "qty": 1,
+          "bid": 5.45,
+          "ask": 5.55,
+          "mid": 5.5
+        }
+      ],
+      "pnl": {
+        "net_debit_credit": -5.5,
+        "max_profit": null,
+        "max_loss": 5.5,
+        "breakevens": [
+          245.5
+        ]
+      }
     }
   ],
   "position_notes": [],
   "red_flags": [
-    "Implied volatility data not provided; confirm IV versus 30-day median pre-trade.",
-    "Bearish setups run against broadly bullish index trend."
+    "Indices extended above 20/50-day MAs; squeeze risk on shorts.",
+    "Volatility may rise into earnings season; manage gamma near expiry."
   ]
 }
