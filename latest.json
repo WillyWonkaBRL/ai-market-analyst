@@ -109,9 +109,136 @@
     "JPM",
     "MSFT"
   ],
-  "trade_ideas": [],
-  "position_notes": [],
+  "trade_ideas": [
+    {
+      "ticker": "IWM",
+      "strategy": "BullCallSpread",
+      "direction": "bullish",
+      "rationale": [
+        "Price above 20/50-DMA; trend intact.",
+        "ATR ~2.9 supports reach to upper strike.",
+        "Low VIX favors defined-risk debit vertical.",
+        "32 days covers typical swing window."
+      ],
+      "entry": {
+        "type": "limit",
+        "level": null,
+        "validity": "today"
+      },
+      "invalidation": {
+        "price": null,
+        "rule": null
+      },
+      "time_frame_days": 32,
+      "risk_notes": [
+        "Close below 20-DMA invalidates momentum.",
+        "Overnight gap risk on macro headlines.",
+        "Assumes IV near 30d median; verify before execution."
+      ],
+      "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
+      "citations": [],
+      "confidence": 0.55,
+      "legs": [
+        {
+          "side": "BUY",
+          "type": "CALL",
+          "expiry": "2025-10-24",
+          "strike": 239.0,
+          "qty": 1,
+          "bid": 0.0,
+          "ask": 0.0,
+          "mid": 0.0
+        },
+        {
+          "side": "SELL",
+          "type": "CALL",
+          "expiry": "2025-10-24",
+          "strike": 246.0,
+          "qty": 1,
+          "bid": 0.0,
+          "ask": 0.0,
+          "mid": 0.0
+        }
+      ],
+      "pnl": {
+        "net_debit_credit": -0.0,
+        "max_profit": 7.0,
+        "max_loss": 0.0,
+        "breakevens": [
+          239.0
+        ]
+      }
+    },
+    {
+      "ticker": "AAPL",
+      "strategy": "LongCall",
+      "direction": "bullish",
+      "rationale": [
+        "Above 20/50-DMA with firm momentum.",
+        "ATR ~4.6 favors convex upside exposure.",
+        "Low VIX keeps call premiums reasonable.",
+        "No near-term earnings; trend continuity favored."
+      ],
+      "entry": {
+        "type": "limit",
+        "level": null,
+        "validity": "today"
+      },
+      "invalidation": {
+        "price": null,
+        "rule": null
+      },
+      "time_frame_days": 32,
+      "risk_notes": [
+        "Break of 20/50-DMA kills thesis.",
+        "Vega and decay drag if momentum stalls.",
+        "Check spreads; use limit orders."
+      ],
+      "sizing_hint": "Risk ~0.5R per ticket.",
+      "citations": [],
+      "confidence": 0.55,
+      "legs": [
+        {
+          "side": "BUY",
+          "type": "CALL",
+          "expiry": "2025-10-24",
+          "strike": 235.0,
+          "qty": 1,
+          "bid": 0.0,
+          "ask": 0.0,
+          "mid": 0.0
+        }
+      ],
+      "pnl": {
+        "net_debit_credit": -0.0,
+        "max_profit": null,
+        "max_loss": 0.0,
+        "breakevens": [
+          235.0
+        ]
+      }
+    }
+  ],
+  "position_notes": [
+    {
+      "symbol": "ALL",
+      "action": "watch",
+      "reason": "IWM bullish vertical: Take profits 50\u201370% of max value; exit on close below 20-DMA."
+    },
+    {
+      "symbol": "ALL",
+      "action": "watch",
+      "reason": "MSFT bull call spread: Trim if value \u226575% of width; reduce on close below 50-DMA."
+    },
+    {
+      "symbol": "ALL",
+      "action": "watch",
+      "reason": "AAPL long calls (10): Scale 1/3 into strength; cut on close below 20-DMA; manage theta <21 DTE by rolling."
+    }
+  ],
   "red_flags": [
-    "LLM schema validation failure"
+    "VIX ~15.5: complacency risk; sudden vol re-pricing possible.",
+    "Verify live option liquidity; avoid wide markets and stale quotes.",
+    "Rates shock (10Y ~4.03%) could hit growth multiples quickly."
   ]
 }
