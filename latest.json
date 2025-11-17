@@ -2,100 +2,100 @@
   "title": "Daily Playbook",
   "as_of": "2025-11-17",
   "macro": {
-    "VIX": 23.010000228881836,
-    "UST10Y": 0.0413100004196167
+    "VIX": 22.420000076293945,
+    "UST10Y": 0.04133000373840332
   },
   "prices": {
     "SPY": {
-      "close": 665.3200073242188,
-      "sma20": 677.2114990234375,
-      "sma50": 668.5173486328125,
-      "atr14": 8.165723528180804,
-      "ret_1d": -0.00983731255281517
+      "close": 665.6699829101562,
+      "sma20": 677.2289978027344,
+      "sma50": 668.5243481445312,
+      "atr14": 8.36572265625,
+      "ret_1d": -0.009316461288915168
     },
     "QQQ": {
-      "close": 602.7000122070312,
-      "sma20": 618.9155029296875,
-      "sma50": 606.2092700195312,
-      "atr14": 10.668461390904017,
-      "ret_1d": -0.010117224473167541
+      "close": 603.6599731445312,
+      "sma20": 618.9635009765625,
+      "sma50": 606.2284692382813,
+      "atr14": 10.828569684709821,
+      "ret_1d": -0.00854057144850584
     },
     "IWM": {
-      "close": 233.77999877929688,
-      "sma20": 243.82999954223632,
-      "sma50": 243.12498229980469,
-      "atr14": 4.4464263916015625,
-      "ret_1d": -0.015580246819977162
+      "close": 232.74000549316406,
+      "sma20": 243.7779998779297,
+      "sma50": 243.10418243408202,
+      "atr14": 4.587140764508929,
+      "ret_1d": -0.019959534780408128
     },
     "DIA": {
-      "close": 466.989990234375,
-      "sma20": 473.0094985961914,
-      "sma50": 466.21703552246095,
-      "atr14": 5.432856968470982,
-      "ret_1d": -0.010194992969572603
+      "close": 466.2699890136719,
+      "sma20": 472.97349853515624,
+      "sma50": 466.20263671875,
+      "atr14": 5.599286760602679,
+      "ret_1d": -0.011721065965189292
     },
     "AAPL": {
-      "close": 267.25,
-      "sma20": 268.37537689208983,
-      "sma50": 256.29696166992187,
-      "atr14": 5.418502271900934,
-      "ret_1d": -0.01894204909049413
+      "close": 267.4599914550781,
+      "sma20": 268.38587646484376,
+      "sma50": 256.30116149902346,
+      "atr14": 5.4842153369120945,
+      "ret_1d": -0.018171183658773127
     },
     "MSFT": {
-      "close": 506.5899963378906,
-      "sma20": 515.9700012207031,
-      "sma50": 514.4269989013671,
-      "atr14": 10.800009591238839,
-      "ret_1d": -0.00703672505670383
+      "close": 507.489990234375,
+      "sma20": 516.0150009155274,
+      "sma50": 514.4449987792968,
+      "atr14": 10.848580496651786,
+      "ret_1d": -0.005272653730103771
     },
     "NVDA": {
-      "close": 185.30999755859375,
-      "sma20": 193.00800094604492,
-      "sma50": 185.94780822753907,
-      "atr14": 8.52714102608817,
-      "ret_1d": -0.02555608485642402
+      "close": 186.60000610351562,
+      "sma20": 193.072501373291,
+      "sma50": 185.9736083984375,
+      "atr14": 8.567140851702009,
+      "ret_1d": -0.018772635535591387
     },
     "AMZN": {
-      "close": 231.21499633789062,
-      "sma20": 236.25175018310546,
-      "sma50": 228.60630004882813,
+      "close": 232.8699951171875,
+      "sma20": 236.33450012207032,
+      "sma50": 228.63940002441407,
       "atr14": 8.425714765276227,
-      "ret_1d": -0.014806792225345089
+      "ret_1d": -0.007754941860691922
     },
     "META": {
-      "close": 599.7883911132812,
-      "sma20": 666.8204223632813,
-      "sma50": 710.5806591796875,
-      "atr14": 24.087637765066965,
-      "ret_1d": -0.015869180111388714
+      "close": 602.010009765625,
+      "sma20": 666.9315032958984,
+      "sma50": 710.6250915527344,
+      "atr14": 24.347852434430802,
+      "ret_1d": -0.01222395553184541
     },
     "TSLA": {
-      "close": 408.3399963378906,
-      "sma20": 440.78350219726565,
-      "sma50": 430.9064001464844,
+      "close": 408.9200134277344,
+      "sma20": 440.8125030517578,
+      "sma50": 430.9180004882812,
       "atr14": 22.677799769810267,
-      "ret_1d": 0.009867664583028457
+      "ret_1d": 0.011302107716671506
     },
     "GOOGL": {
-      "close": 284.5199890136719,
-      "sma20": 275.2950012207031,
-      "sma50": 258.2504000854492,
+      "close": 285.0199890136719,
+      "sma20": 275.32000122070315,
+      "sma50": 258.2604000854492,
       "atr14": 9.476429530552455,
-      "ret_1d": 0.029340419102473314
+      "ret_1d": 0.031149326136862943
     },
     "JPM": {
-      "close": 299.54998779296875,
-      "sma20": 307.2614990234375,
-      "sma50": 307.089052734375,
-      "atr14": 6.579273768833706,
-      "ret_1d": -0.013372411167216769
+      "close": 300.3699951171875,
+      "sma20": 307.30249938964846,
+      "sma50": 307.1054528808594,
+      "atr14": 6.706324986049107,
+      "ret_1d": -0.01067155360724803
     },
     "XOM": {
-      "close": 117.93499755859375,
-      "sma20": 115.13148880004883,
-      "sma50": 113.28870880126954,
-      "atr14": 2.0901923780856313,
-      "ret_1d": -0.011358901387662046
+      "close": 117.68000030517578,
+      "sma20": 115.11873893737793,
+      "sma50": 113.28360885620117,
+      "atr14": 2.146621014909013,
+      "ret_1d": -0.013496526096027583
     }
   },
   "watchlist": [
@@ -115,10 +115,10 @@
       "strategy": "BullCallSpread",
       "direction": "bullish",
       "rationale": [
-        "IWM extended below 20/50-DMA; bounce toward 240 plausible.",
-        "ATR 4.45 supports reach into spread strikes.",
-        "Defined risk with favorable profit-to-risk per structure.",
-        "Vertical reduces vega versus outright calls."
+        "IWM oversold vs 20/50-DMAs; bounce risk into 20-DMA.",
+        "Breakeven ~236.4 is <1 ATR from spot.",
+        "VIX 22 favors defined-risk vertical over outright calls.",
+        "Seasonal bid into December often helps small caps."
       ],
       "entry": {
         "type": "limit",
@@ -131,8 +131,8 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Failure to reclaim 20-DMA quickly weakens thesis.",
-        "Gap risk with VIX >20; decay with 32 DTE.",
+        "Failure to reclaim 235 quickly weakens bounce odds.",
+        "Gap-down risk in high VIX regime.",
         "Assumes IV near 30d median; verify before execution."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
@@ -145,9 +145,9 @@
           "expiry": "2025-12-19",
           "strike": 233.0,
           "qty": 1,
-          "bid": 7.32,
-          "ask": 7.36,
-          "mid": 7.34
+          "bid": 7.24,
+          "ask": 7.28,
+          "mid": 7.26
         },
         {
           "side": "SELL",
@@ -155,17 +155,17 @@
           "expiry": "2025-12-19",
           "strike": 240.0,
           "qty": 1,
-          "bid": 3.98,
-          "ask": 4.02,
-          "mid": 4.0
+          "bid": 3.81,
+          "ask": 3.86,
+          "mid": 3.83
         }
       ],
       "pnl": {
-        "net_debit_credit": -3.34,
-        "max_profit": 3.66,
-        "max_loss": 3.34,
+        "net_debit_credit": -3.43,
+        "max_profit": 3.57,
+        "max_loss": 3.43,
         "breakevens": [
-          236.34
+          236.43
         ]
       }
     },
@@ -174,10 +174,10 @@
       "strategy": "BearPutSpread",
       "direction": "bearish",
       "rationale": [
-        "Price below 20/50-DMA; failed to hold 515.",
-        "Room to retest 500 support within 32 days.",
-        "Vertical contains vega; attractive reward versus risk.",
-        "Elevated vol supports downside follow-through."
+        "Price below 20/50-DMAs; relative weakness vs QQQ.",
+        "Target toward 500; BE ~499.5 aligns with support.",
+        "Vertical limits theta/vega versus naked puts.",
+        "Market breadth weak; downside follow-through plausible."
       ],
       "entry": {
         "type": "limit",
@@ -190,9 +190,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Close back above 20-DMA invalidates.",
-        "Chop risk without catalysts; theta if stall above 510.",
-        "Assumes IV near 30d median; verify pre-trade."
+        "Sharp rebound above 515 invalidates.",
+        "Headline-driven squeezes can crush put spreads.",
+        "Assumes IV near 30d median; verify before execution."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -204,9 +204,9 @@
           "expiry": "2025-12-19",
           "strike": 505.0,
           "qty": 1,
-          "bid": 13.55,
-          "ask": 13.7,
-          "mid": 13.62
+          "bid": 12.9,
+          "ask": 13.15,
+          "mid": 13.03
         },
         {
           "side": "SELL",
@@ -214,17 +214,17 @@
           "expiry": "2025-12-19",
           "strike": 490.0,
           "qty": 1,
-          "bid": 8.0,
-          "ask": 8.05,
-          "mid": 8.03
+          "bid": 7.45,
+          "ask": 7.65,
+          "mid": 7.55
         }
       ],
       "pnl": {
-        "net_debit_credit": -5.59,
-        "max_profit": 9.41,
-        "max_loss": 5.59,
+        "net_debit_credit": -5.48,
+        "max_profit": 9.52,
+        "max_loss": 5.48,
         "breakevens": [
-          499.41
+          499.52
         ]
       }
     },
@@ -233,10 +233,9 @@
       "strategy": "BearPutSpread",
       "direction": "bearish",
       "rationale": [
-        "Rejected 20-DMA; testing 50-DMA with negative momentum.",
-        "ATR 8.5 can tag 179 support quickly.",
-        "Defined risk; favorable spread payoff profile.",
-        "Semi weakness aligns with macro risk-off tone."
+        "Below 20-DMA; momentum soft near 50-DMA pivot.",
+        "Break toward 181 matches short strike objective.",
+        "Defined-risk vertical; R/R ~1.1:1 keeps risk contained."
       ],
       "entry": {
         "type": "limit",
@@ -249,9 +248,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Close above 20-DMA negates the setup.",
-        "AI headlines can squeeze; gap risk elevated.",
-        "Assumes IV near 30d median; confirm before entry."
+        "AI headline squeeze risk; semis volatile.",
+        "Close back above 20-DMA weakens bear case.",
+        "Assumes IV near 30d median; verify before execution."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -261,21 +260,21 @@
           "side": "BUY",
           "type": "PUT",
           "expiry": "2025-12-19",
-          "strike": 185.0,
+          "strike": 187.0,
           "qty": 1,
-          "bid": 11.2,
-          "ask": 11.3,
-          "mid": 11.25
+          "bid": 11.7,
+          "ask": 11.8,
+          "mid": 11.75
         },
         {
           "side": "SELL",
           "type": "PUT",
           "expiry": "2025-12-19",
-          "strike": 179.0,
+          "strike": 181.0,
           "qty": 1,
-          "bid": 8.4,
-          "ask": 8.5,
-          "mid": 8.45
+          "bid": 8.9,
+          "ask": 9.0,
+          "mid": 8.95
         }
       ],
       "pnl": {
@@ -283,7 +282,7 @@
         "max_profit": 3.2,
         "max_loss": 2.8,
         "breakevens": [
-          182.2
+          184.2
         ]
       }
     }
@@ -292,18 +291,22 @@
     {
       "symbol": "IWM",
       "action": "watch",
-      "reason": "Price 233.78 below both MAs and long strike; 32 DTE. Need swift reclaim of 20-DMA or plan to exit."
+      "reason": "Below 20/50-DMA and OTM; 32 DTE. Watch for 235 reclaim; close if <230 daily."
     },
     {
       "symbol": "MSFT",
       "action": "roll",
-      "reason": "Price 506.59 below short 515 with 18 DTE. Roll down/out to reduce assignment and extend time."
+      "reason": "Underlying 507 below 515 short; 18 DTE. Roll down/out to regain probability if 515 not reclaimed soon."
     },
     {
       "symbol": "NVDA",
       "action": "keep",
-      "reason": "Price near 50-DMA and below 20-DMA; 32 DTE. Bear put remains aligned; let it work."
+      "reason": "Between strikes; under 20-DMA near 50-DMA; 32 DTE. Keep unless daily close above 193."
     }
   ],
-  "red_flags": []
+  "red_flags": [
+    "VIX above 22 increases gap/whipsaw risk; size smaller.",
+    "Indexes below 20-DMAs; momentum fragile.",
+    "Verify macro calendar for surprises before entry."
+  ]
 }
