@@ -115,9 +115,9 @@
       "strategy": "BullCallSpread",
       "direction": "bullish",
       "rationale": [
-        "Oversold vs 20/50-DMA; 1\u20132 ATR rebound can test 236\u2013240.",
-        "233 area holding; mean-reversion setup with defined risk.",
-        "Vertical reduces vega impact with VIX ~22."
+        "Oversold vs 20/50-DMA; bounce into 235\u2013239 plausible.",
+        "ATR ~4.45 supports reachable target; vertical defines risk.",
+        "VIX ~22 favors spreads over naked calls."
       ],
       "entry": {
         "type": "limit",
@@ -130,9 +130,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Counter-trend: below 20-DMA; bounce may fail.",
-        "Macro gap risk; small-caps volatile.",
-        "Assumes IV near 30d median; verify liquidity and spreads."
+        "Needs quick 20-DMA reclaim; repeated closes below invalidate.",
+        "Time decay if bounce stalls; holiday liquidity risk.",
+        "Assumes IV near 30d median; verify skew before entry."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -142,29 +142,29 @@
           "side": "BUY",
           "type": "CALL",
           "expiry": "2025-12-19",
-          "strike": 233.0,
+          "strike": 232.0,
           "qty": 1,
-          "bid": 8.13,
-          "ask": 8.16,
-          "mid": 8.14
+          "bid": 8.45,
+          "ask": 8.51,
+          "mid": 8.48
         },
         {
           "side": "SELL",
           "type": "CALL",
           "expiry": "2025-12-19",
-          "strike": 240.0,
+          "strike": 239.0,
           "qty": 1,
-          "bid": 4.4,
-          "ask": 4.43,
-          "mid": 4.42
+          "bid": 4.59,
+          "ask": 4.64,
+          "mid": 4.62
         }
       ],
       "pnl": {
-        "net_debit_credit": -3.72,
-        "max_profit": 3.28,
-        "max_loss": 3.72,
+        "net_debit_credit": -3.86,
+        "max_profit": 3.14,
+        "max_loss": 3.86,
         "breakevens": [
-          236.72
+          235.86
         ]
       }
     },
@@ -173,9 +173,9 @@
       "strategy": "BearPutSpread",
       "direction": "bearish",
       "rationale": [
-        "Below 20/50-DMAs with lower highs; momentum weak.",
-        "Breakeven ~499.6 is ~1.4% away, within 1 ATR.",
-        "Defined-risk bearish tilt; favorable payoff vs debit."
+        "Price below 20/50-DMA; momentum soft.",
+        "Defined-risk short targeting 500/490 zone.",
+        "Elevated vol supports debit spreads over naked puts."
       ],
       "entry": {
         "type": "limit",
@@ -188,9 +188,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Sharp reversal above 20-DMA would invalidate.",
-        "IV compression on market calm can hurt spread.",
-        "Liquidity usually solid; use limit near mid."
+        "Snapback above 20-DMA invalidates.",
+        "Round-number 500 support may bounce price.",
+        "Assumes IV near 30d median; verify before execution."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -202,9 +202,9 @@
           "expiry": "2025-12-19",
           "strike": 505.0,
           "qty": 1,
-          "bid": 13.0,
-          "ask": 13.2,
-          "mid": 13.1
+          "bid": 13.4,
+          "ask": 13.55,
+          "mid": 13.48
         },
         {
           "side": "SELL",
@@ -212,17 +212,17 @@
           "expiry": "2025-12-19",
           "strike": 490.0,
           "qty": 1,
-          "bid": 7.6,
-          "ask": 7.75,
-          "mid": 7.67
+          "bid": 7.75,
+          "ask": 7.9,
+          "mid": 7.83
         }
       ],
       "pnl": {
-        "net_debit_credit": -5.43,
-        "max_profit": 9.57,
-        "max_loss": 5.43,
+        "net_debit_credit": -5.65,
+        "max_profit": 9.35,
+        "max_loss": 5.65,
         "breakevens": [
-          499.57
+          499.35
         ]
       }
     },
@@ -231,9 +231,9 @@
       "strategy": "BearPutSpread",
       "direction": "bearish",
       "rationale": [
-        "Below 20-DMA and slipping under 50-DMA; sellers in control.",
-        "Breakeven ~182.4 is ~1.6% lower, within 1 ATR.",
-        "Vertical dampens vega in elevated IV regime."
+        "Below 20-DMA and testing 50-DMA; -2.6% day momentum.",
+        "High beta; downside continuation if QQQ stays weak.",
+        "ATR ~8.5 makes 179 test feasible; defined risk."
       ],
       "entry": {
         "type": "limit",
@@ -246,9 +246,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Snapback toward 20-DMA (~193) would kill the short.",
-        "Headline/gap risk remains high.",
-        "Assumes IV near 30d median; confirm before execution."
+        "Reclaim of 20-DMA invalidates the short.",
+        "Semis headline/gap risk can whipsaw.",
+        "Assumes IV near median; confirm term structure."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -260,9 +260,9 @@
           "expiry": "2025-12-19",
           "strike": 185.0,
           "qty": 1,
-          "bid": 10.7,
-          "ask": 10.8,
-          "mid": 10.75
+          "bid": 10.95,
+          "ask": 11.05,
+          "mid": 11.0
         },
         {
           "side": "SELL",
@@ -270,17 +270,17 @@
           "expiry": "2025-12-19",
           "strike": 179.0,
           "qty": 1,
-          "bid": 8.05,
-          "ask": 8.2,
-          "mid": 8.12
+          "bid": 8.15,
+          "ask": 8.25,
+          "mid": 8.2
         }
       ],
       "pnl": {
-        "net_debit_credit": -2.63,
-        "max_profit": 3.37,
-        "max_loss": 2.63,
+        "net_debit_credit": -2.8,
+        "max_profit": 3.2,
+        "max_loss": 2.8,
         "breakevens": [
-          182.37
+          182.2
         ]
       }
     }
@@ -288,33 +288,24 @@
   "position_notes": [
     {
       "symbol": "MSFT",
-      "action": "trim",
-      "reason": "Price 506.6 between 515/500; ~4 DTE. Take partial gains to reduce gamma/gap risk."
+      "action": "roll",
+      "reason": "Spread ITM by ~8.4 with 4 days left. Realize gains and roll to Dec to maintain bearish exposure."
     },
     {
       "symbol": "IWM",
       "action": "watch",
-      "reason": "Dec 19 237/244 OTM; 32 DTE. Needs reclaim >235\u2013237 soon; reassess on sub-230 close."
+      "reason": "Both strikes above price with 32 days left. Needs quick reclaim of 235\u2013237 to validate; otherwise consider exit."
     },
     {
       "symbol": "NVDA",
-      "action": "watch",
-      "reason": "Nov 21 180/175 near OTM; ~4 DTE. Keep for 180 break; cut on close >188."
+      "action": "close",
+      "reason": "Both legs OTM with 4 days left. Low probability of reaching 180; avoid total decay."
     },
     {
       "symbol": "NVDA",
       "action": "keep",
-      "reason": "Dec 19 188/182 between strikes; 32 DTE. Trend below 20-DMA; thesis intact."
-    },
-    {
-      "symbol": "IWM",
-      "action": "close",
-      "reason": "Nov 21 250/258 far OTM; ~4 DTE. Low salvage value\u2014exit and reallocate."
+      "reason": "Price between 182/188 with 32 days left. Bearish trend intact; spread has intrinsic value."
     }
   ],
-  "red_flags": [
-    "VIX > 20: wider spreads and gap risk.",
-    "Indexes below 20-DMA: trend risk against long bounces.",
-    "Multiple positions ~4 DTE: elevated gamma/theta into expiry."
-  ]
+  "red_flags": []
 }
