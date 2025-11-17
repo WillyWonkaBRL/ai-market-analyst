@@ -115,10 +115,9 @@
       "strategy": "BullCallSpread",
       "direction": "bullish",
       "rationale": [
-        "Oversold under 20/50-DMA; mean-reversion bounce likely.",
-        "Breakeven ~237.5 is <1 ATR above spot.",
-        "VIX ~22 favors defined-risk verticals to curb vega.",
-        "Seasonal breadth into year-end can aid small caps."
+        "Oversold vs 20/50-DMA; 1\u20132 ATR rebound can test 236\u2013240.",
+        "233 area holding; mean-reversion setup with defined risk.",
+        "Vertical reduces vega impact with VIX ~22."
       ],
       "entry": {
         "type": "limit",
@@ -131,9 +130,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Continuation lower in small caps invalidates.",
-        "Macro gap risk with elevated VIX; use limits.",
-        "Assumes IV near 30d median; verify before execution."
+        "Counter-trend: below 20-DMA; bounce may fail.",
+        "Macro gap risk; small-caps volatile.",
+        "Assumes IV near 30d median; verify liquidity and spreads."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -143,29 +142,29 @@
           "side": "BUY",
           "type": "CALL",
           "expiry": "2025-12-19",
-          "strike": 234.0,
+          "strike": 233.0,
           "qty": 1,
-          "bid": 7.49,
-          "ask": 7.52,
-          "mid": 7.5
+          "bid": 8.13,
+          "ask": 8.16,
+          "mid": 8.14
         },
         {
           "side": "SELL",
           "type": "CALL",
           "expiry": "2025-12-19",
-          "strike": 241.0,
+          "strike": 240.0,
           "qty": 1,
-          "bid": 4.0,
-          "ask": 4.03,
-          "mid": 4.02
+          "bid": 4.4,
+          "ask": 4.43,
+          "mid": 4.42
         }
       ],
       "pnl": {
-        "net_debit_credit": -3.48,
-        "max_profit": 3.52,
-        "max_loss": 3.48,
+        "net_debit_credit": -3.72,
+        "max_profit": 3.28,
+        "max_loss": 3.72,
         "breakevens": [
-          237.48
+          236.72
         ]
       }
     },
@@ -174,9 +173,9 @@
       "strategy": "BearPutSpread",
       "direction": "bearish",
       "rationale": [
-        "Below 20/50-DMA; relative weakness vs QQQ persists.",
-        "Breakeven ~499.5 sits within 1 ATR move.",
-        "VIX >20: debit spread limits theta/vega versus naked puts."
+        "Below 20/50-DMAs with lower highs; momentum weak.",
+        "Breakeven ~499.6 is ~1.4% away, within 1 ATR.",
+        "Defined-risk bearish tilt; favorable payoff vs debit."
       ],
       "entry": {
         "type": "limit",
@@ -189,9 +188,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Close back above 20-DMA negates thesis.",
-        "AI/mega-cap squeeze risk; manage near 512\u2013516.",
-        "Assumes IV near 30d median; confirm no earnings in cycle."
+        "Sharp reversal above 20-DMA would invalidate.",
+        "IV compression on market calm can hurt spread.",
+        "Liquidity usually solid; use limit near mid."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -203,9 +202,9 @@
           "expiry": "2025-12-19",
           "strike": 505.0,
           "qty": 1,
-          "bid": 13.1,
-          "ask": 13.3,
-          "mid": 13.2
+          "bid": 13.0,
+          "ask": 13.2,
+          "mid": 13.1
         },
         {
           "side": "SELL",
@@ -213,17 +212,17 @@
           "expiry": "2025-12-19",
           "strike": 490.0,
           "qty": 1,
-          "bid": 7.65,
-          "ask": 7.8,
-          "mid": 7.72
+          "bid": 7.6,
+          "ask": 7.75,
+          "mid": 7.67
         }
       ],
       "pnl": {
-        "net_debit_credit": -5.48,
-        "max_profit": 9.52,
-        "max_loss": 5.48,
+        "net_debit_credit": -5.43,
+        "max_profit": 9.57,
+        "max_loss": 5.43,
         "breakevens": [
-          499.52
+          499.57
         ]
       }
     },
@@ -232,9 +231,9 @@
       "strategy": "BearPutSpread",
       "direction": "bearish",
       "rationale": [
-        "Below 20-DMA and hugging 50-DMA; momentum cooling.",
-        "182 target is <1 ATR from spot; feasible.",
-        "Vertical mitigates vega drag with VIX ~22."
+        "Below 20-DMA and slipping under 50-DMA; sellers in control.",
+        "Breakeven ~182.4 is ~1.6% lower, within 1 ATR.",
+        "Vertical dampens vega in elevated IV regime."
       ],
       "entry": {
         "type": "limit",
@@ -247,9 +246,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "AI headline squeezes can reverse quickly.",
-        "Reclaiming 20-DMA invalidates.",
-        "Pin/liquidity risks near round levels; use limits."
+        "Snapback toward 20-DMA (~193) would kill the short.",
+        "Headline/gap risk remains high.",
+        "Assumes IV near 30d median; confirm before execution."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -261,9 +260,9 @@
           "expiry": "2025-12-19",
           "strike": 185.0,
           "qty": 1,
-          "bid": 10.75,
-          "ask": 10.85,
-          "mid": 10.8
+          "bid": 10.7,
+          "ask": 10.8,
+          "mid": 10.75
         },
         {
           "side": "SELL",
@@ -271,17 +270,17 @@
           "expiry": "2025-12-19",
           "strike": 179.0,
           "qty": 1,
-          "bid": 8.1,
+          "bid": 8.05,
           "ask": 8.2,
-          "mid": 8.15
+          "mid": 8.12
         }
       ],
       "pnl": {
-        "net_debit_credit": -2.65,
-        "max_profit": 3.35,
-        "max_loss": 2.65,
+        "net_debit_credit": -2.63,
+        "max_profit": 3.37,
+        "max_loss": 2.63,
         "breakevens": [
-          182.35
+          182.37
         ]
       }
     }
@@ -289,183 +288,33 @@
   "position_notes": [
     {
       "symbol": "MSFT",
-      "action": "close",
-      "reason": "Expired Oct 10; remove and realize outcome."
-    },
-    {
-      "symbol": "NVDA",
-      "action": "close",
-      "reason": "Expired Oct 10; value realized, close record."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "close",
-      "reason": "Expired Oct 10; outcome realized."
-    },
-    {
-      "symbol": "MSFT",
-      "action": "close",
-      "reason": "No active legs/expiry; close placeholder to clean book."
-    },
-    {
-      "symbol": "NVDA",
-      "action": "close",
-      "reason": "No active legs/expiry; close placeholder to clean book."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "close",
-      "reason": "No active legs/expiry; close placeholder to clean book."
-    },
-    {
-      "symbol": "MSFT",
-      "action": "close",
-      "reason": "Expired Oct 10; duplicate entry\u2014close."
-    },
-    {
-      "symbol": "NVDA",
-      "action": "close",
-      "reason": "Expired Oct 10; duplicate entry\u2014close."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "close",
-      "reason": "Expired Oct 10; duplicate entry\u2014close."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "close",
-      "reason": "No legs/expiry; close placeholder."
-    },
-    {
-      "symbol": "NVDA",
-      "action": "close",
-      "reason": "Thesis invalid now; below MAs. Close placeholder."
-    },
-    {
-      "symbol": "GOOGL",
-      "action": "close",
-      "reason": "No legs/expiry; treat as idea\u2014close record."
-    },
-    {
-      "symbol": "IWM",
-      "action": "close",
-      "reason": "Expired Oct 17; remove and finalize P&L."
-    },
-    {
-      "symbol": "MSFT",
-      "action": "close",
-      "reason": "Expired Oct 17; remove and finalize P&L."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "close",
-      "reason": "Expired Oct 17; remove and finalize P&L."
-    },
-    {
-      "symbol": "IWM",
-      "action": "close",
-      "reason": "Expired Oct 24; remove and finalize P&L."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "close",
-      "reason": "Expired Oct 24; remove and finalize P&L."
-    },
-    {
-      "symbol": "IWM",
-      "action": "close",
-      "reason": "Expired Oct 24; remove and finalize P&L."
-    },
-    {
-      "symbol": "NVDA",
-      "action": "close",
-      "reason": "Expired Oct 24; remove and finalize P&L."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "close",
-      "reason": "Expired Oct 24; remove and finalize P&L."
-    },
-    {
-      "symbol": "IWM",
-      "action": "close",
-      "reason": "Expired Oct 24; remove and finalize P&L."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "close",
-      "reason": "Expired Oct 24; remove and finalize P&L."
-    },
-    {
-      "symbol": "IWM",
-      "action": "close",
-      "reason": "Expired Nov 07; remove and finalize P&L."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "close",
-      "reason": "Expired Nov 07; remove and finalize P&L."
-    },
-    {
-      "symbol": "IWM",
-      "action": "close",
-      "reason": "Four days left, far OTM at 233.8; low odds."
-    },
-    {
-      "symbol": "MSFT",
       "action": "trim",
-      "reason": "Profitable with 4 days left; take partials, keep only if <505."
+      "reason": "Price 506.6 between 515/500; ~4 DTE. Take partial gains to reduce gamma/gap risk."
+    },
+    {
+      "symbol": "IWM",
+      "action": "watch",
+      "reason": "Dec 19 237/244 OTM; 32 DTE. Needs reclaim >235\u2013237 soon; reassess on sub-230 close."
     },
     {
       "symbol": "NVDA",
-      "action": "roll",
-      "reason": "Price ~185 near long strike; roll to December for time."
+      "action": "watch",
+      "reason": "Nov 21 180/175 near OTM; ~4 DTE. Keep for 180 break; cut on close >188."
+    },
+    {
+      "symbol": "NVDA",
+      "action": "keep",
+      "reason": "Dec 19 188/182 between strikes; 32 DTE. Trend below 20-DMA; thesis intact."
     },
     {
       "symbol": "IWM",
       "action": "close",
-      "reason": "18 days left and far OTM; redeploy capital."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "watch",
-      "reason": "OTM by ~3; hold while above 50-DMA; cut on <260."
-    },
-    {
-      "symbol": "IWM",
-      "action": "roll",
-      "reason": "OTM with weak trend; roll down/out for better delta and time."
-    },
-    {
-      "symbol": "MSFT",
-      "action": "keep",
-      "reason": "Below 20/50-DMA; 32 days left; thesis intact toward 490."
-    },
-    {
-      "symbol": "AAPL",
-      "action": "keep",
-      "reason": "Above 50-DMA; 32 days left; hold for 275 test."
-    },
-    {
-      "symbol": "IWM",
-      "action": "watch",
-      "reason": "Needs 20-DMA reclaim; cut on new lows."
-    },
-    {
-      "symbol": "MSFT",
-      "action": "keep",
-      "reason": "Below key MAs; 32 days left; maintain bearish spread."
-    },
-    {
-      "symbol": "NVDA",
-      "action": "keep",
-      "reason": "Below 20-DMA; ATR supports 182 test; keep."
+      "reason": "Nov 21 250/258 far OTM; ~4 DTE. Low salvage value\u2014exit and reallocate."
     }
   ],
   "red_flags": [
-    "VIX >22 elevates gap risk; size smaller and use limits.",
-    "Major indexes below 20/50-DMA; trend fragile and prone to whipsaws.",
-    "Stale/expired positions linger; close to reduce book noise."
+    "VIX > 20: wider spreads and gap risk.",
+    "Indexes below 20-DMA: trend risk against long bounces.",
+    "Multiple positions ~4 DTE: elevated gamma/theta into expiry."
   ]
 }
