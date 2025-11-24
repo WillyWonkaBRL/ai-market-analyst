@@ -115,10 +115,10 @@
       "strategy": "BullCallSpread",
       "direction": "bullish",
       "rationale": [
-        "Bounce day with improving breadth; room to retest short-term resistance.",
-        "Breakeven ~242.2 is ~0.6x ATR above spot.",
-        "Defined-risk vertical reduces vega exposure with VIX ~21.",
-        "Seasonal flows can aid small-cap catch-up into year-end."
+        "Bounce day, still below 20/50-DMA; mean-reversion setup.",
+        "VIX ~21 favors defined-risk verticals with limited vega.",
+        "Targets reclaim toward 246 resistance efficiently.",
+        "Defined risk/reward (~1:1.2) with breakeven near 242."
       ],
       "entry": {
         "type": "limit",
@@ -131,9 +131,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Still below 20/50-DMAs; weak close <236 kills thesis.",
-        "Gap risk elevated in small caps; manage overnight exposure.",
-        "Assumes IV near 30d median; verify before execution."
+        "Thesis fails on close back below 20-DMA.",
+        "Macro gap risk; small caps headline-sensitive.",
+        "Theta picks up if consolidation persists."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -145,9 +145,9 @@
           "expiry": "2025-12-26",
           "strike": 239.0,
           "qty": 1,
-          "bid": 6.33,
-          "ask": 6.38,
-          "mid": 6.36
+          "bid": 6.35,
+          "ask": 6.39,
+          "mid": 6.37
         },
         {
           "side": "SELL",
@@ -156,8 +156,8 @@
           "strike": 246.0,
           "qty": 1,
           "bid": 3.16,
-          "ask": 3.19,
-          "mid": 3.17
+          "ask": 3.2,
+          "mid": 3.18
         }
       ],
       "pnl": {
@@ -174,9 +174,10 @@
       "strategy": "BearPutSpread",
       "direction": "bearish",
       "rationale": [
-        "Price below 20/50-DMAs; supply overhead persists.",
-        "Pullback toward 461 support is ~1.2x ATR.",
-        "Debit spread caps theta and IV crush risk with VIX ~21."
+        "Below 20/50-DMA; trend lower despite minor bounce.",
+        "20-DMA overhead offers nearby invalidation.",
+        "Vertical reduces vega at VIX ~21.",
+        "Targets 461 area into year-end."
       ],
       "entry": {
         "type": "limit",
@@ -189,9 +190,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "Short 461p quotes missing; confirm liquidity and pricing before entry.",
-        "Squeeze risk if mega-cap rotation resumes; close >20-DMA invalidates.",
-        "Assumes IV near 30d median; verify."
+        "Short put leg lacks quotes; verify liquidity and spreads.",
+        "Assumes IV near 30d median; confirm before entry.",
+        "Headlines could trigger sharp reversals."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -203,9 +204,9 @@
           "expiry": "2025-12-26",
           "strike": 475.0,
           "qty": 1,
-          "bid": 12.35,
-          "ask": 12.75,
-          "mid": 12.55
+          "bid": 12.2,
+          "ask": 12.55,
+          "mid": 12.38
         },
         {
           "side": "SELL",
@@ -230,9 +231,10 @@
       "strategy": "BearPutSpread",
       "direction": "bearish",
       "rationale": [
-        "Below 20/50-DMAs; trend bias remains lower.",
-        "Breakeven ~177.8 is ~0.2x ATR below spot.",
-        "High beta; 0.5\u20131 ATR down move realizes spread value."
+        "Below 20/50-DMA; momentum negative.",
+        "Underlying under 180 makes spread slightly ITM.",
+        "Vertical contains vega with elevated semis IV.",
+        "Targets 175 support retest."
       ],
       "entry": {
         "type": "limit",
@@ -245,9 +247,9 @@
       },
       "time_frame_days": 32,
       "risk_notes": [
-        "AI-led squeezes can be violent; close >20-DMA invalidates.",
-        "Headline risk without earnings; gaps possible.",
-        "Assumes IV near 30d median; verify."
+        "AI-led squeezes can reverse quickly.",
+        "Thesis fails on close above 20-DMA.",
+        "Sector beta to macro surprises remains high."
       ],
       "sizing_hint": "Risk ~0.5R per ticket; vertical caps theta.",
       "citations": [],
@@ -259,9 +261,9 @@
           "expiry": "2025-12-26",
           "strike": 180.0,
           "qty": 1,
-          "bid": 9.6,
+          "bid": 9.55,
           "ask": 9.65,
-          "mid": 9.62
+          "mid": 9.6
         },
         {
           "side": "SELL",
@@ -270,16 +272,16 @@
           "strike": 175.0,
           "qty": 1,
           "bid": 7.35,
-          "ask": 7.4,
-          "mid": 7.38
+          "ask": 7.45,
+          "mid": 7.4
         }
       ],
       "pnl": {
-        "net_debit_credit": -2.24,
-        "max_profit": 2.76,
-        "max_loss": 2.24,
+        "net_debit_credit": -2.2,
+        "max_profit": 2.8,
+        "max_loss": 2.2,
         "breakevens": [
-          177.76
+          177.8
         ]
       }
     }
@@ -287,13 +289,12 @@
   "position_notes": [
     {
       "symbol": "IWM",
-      "action": "watch",
-      "reason": "Underlying 239 sits between 237/244 strikes with ~25 DTE. Price below 20/50-DMAs; need reclaim of 20-DMA (~240.5) soon or consider closing."
+      "action": "keep",
+      "reason": "IWM ~239 sits between 237/244 strikes. About 25 days left; need follow-through above 244 for max value. Close <237 would invalidate."
     }
   ],
   "red_flags": [
-    "MSFT short 461p lacks quotes; verify liquidity and executable mid.",
-    "Elevated VIX (~21) increases overnight gap risk for all ideas.",
-    "Edge depends on IV near median; confirm chain IVs before entry."
+    "MSFT short put leg shows no quotes; confirm liquidity and pricing before execution.",
+    "Holiday liquidity may widen spreads; use patient limits."
   ]
 }
